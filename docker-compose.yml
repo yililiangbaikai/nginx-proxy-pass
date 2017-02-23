@@ -5,10 +5,6 @@ services:
     container_name: nginx
     volumes:
       - ./conf.d:/etc/nginx/conf.d
-      - /app/ermp/ermp-actman-web:/app/ermp/ermp-actman-web
-      - /app/ermp/ermp-web-new:/app/ermp/ermp-web-new
-      - /nas:/nas
-      - /app/rayshin-web:/app/rayshin-web
     ports:
       - "80:80"
     environment:
